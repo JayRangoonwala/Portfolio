@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-neutral-950 text-slate-300 bg-gradient-to-b from-slate-800 to-black bg-no-repeat bg-fixed;
+  }
+  .skill-span{
+    @apply inset-0 text-slate-400 font-semibold opacity-0 group-hover:opacity-100 transition-opacity ease-in-out pt-1 text-sm;
+  }
+}
