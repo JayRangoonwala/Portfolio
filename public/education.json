@@ -1,0 +1,16 @@
+[
+    {
+        "title" : "Sarvjanik College Of Engineering And Technology (SCET)",
+        "location" : "Surat,Gujarat",
+        "year" : "2022-2026",
+        "description" : "Bachelor of Engineering (B.E.) in Computer Engineering "  ,
+        "grade" : "CGPA : 8.95"
+    },
+    {
+        "title" : "P.H.Bachkaniwala Vidhya Mandir",
+        "location" : "Surat,Gujarat",
+        "year" : "2010-2022",
+        "description":"",
+        "grade" : "Percentail : 96% (12th)" 
+    }
+]

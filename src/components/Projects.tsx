@@ -1,25 +1,64 @@
-import React from 'react'
+import { useState, useEffect } from "react";
+import React from "react";
 
-const Projects:React.FC = () => {
-  return (
-    <section className='mt-5 px-16'>
-        <div className='flex items-center justify-between cursor-pointer'>
-            <img src="./urlshortner.jpg" alt="URL SHORTNER LOGO" className='h-[150px] w-[160px]'/>
-        <div className='flex flex-col items-start px-4 py-3 bg-slate-700 h-[150px] w-full rounded-r-lg'>
-            <h1 className='text-xl'>URL SHORTNER</h1>
-            <span className='text-xs text-slate-400'>To convert long URLs into short url,Easy-to-remember links. It is commonly used for sharing links on social media, messaging apps, or emails where space is limited.</span>
-            <ul className='flex gap-3 mt-4'>
-                <li className='bg-slate-900 p-[6px] px-[8px] text-xs rounded-xl'>REACT</li>
-                <li className='bg-slate-900 p-[6px] px-[8px] text-xs rounded-xl'>NODE JS</li>
-                <li className='bg-slate-900 p-[6px] px-[8px] text-xs rounded-xl'>EXPRESS</li>
-                <li className='bg-slate-900 p-[6px] px-[8px] text-xs rounded-xl'>MONGODB</li>
-                <li className='bg-slate-900 p-[6px] px-[8px] text-xs rounded-xl'>JAVASCRIPT</li>
-                <li className='bg-slate-900 p-[6px] px-[8px] text-xs rounded-xl'>CSS</li>
-            </ul>
-            </div>
-        </div>
-    </section>
-  )
+interface Project {
+  image_url: string;
+  title: string;
+  description: string;
+  skills: string[];
 }
 
-export default Projects
+const Projects: React.FC = () => {
+  const [project, setProject] = useState<Project[]>([]);
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch("/projects.json");
+      if (response.ok) {
+        const data: Project[] = await response.json();
+        setProject(data);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+  console.log("project", project);
+
+  return (
+    <>
+      {project.map((data: Project) => {
+        return (
+          <section
+            className="mt-5 px-16"
+            onClick={() => window.open(data.link, "_blank")}
+          >
+            <div className="flex items-center justify-between cursor-pointer">
+              <img src={data.image_url} className="h-[150px] w-[160px]" />
+              <div className="flex flex-col items-start px-4 py-3 bg-slate-700 h-[150px] w-full rounded-r-lg">
+                <h1 className="text-xl">{data.title}</h1>
+                <span className="text-xs text-slate-400">
+                  {data.description}
+                </span>
+                <ul className="flex gap-3 mt-4">
+                  {data.skills.map((skill: string) => {
+                    return (
+                      <li className="bg-slate-900 p-[6px] px-[8px] text-xs rounded-xl">
+                        {skill}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            </div>
+          </section>
+        );
+      })}
+    </>
+  );
+};
+
+export default Projects;

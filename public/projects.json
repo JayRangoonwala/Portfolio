@@ -1,0 +1,23 @@
+[
+    {
+        "image_url" : "./urlshortner.jpg",
+        "title" : "URL SHORTNER",
+        "description" : "To convert long URLs into short url,Easy-to-remember links. It is commonly used for sharing links on social media, messaging apps, or emails where space is limited.",
+        "skills" : ["REACT","NODE JS","EXPRESS","MONGODB","JAVASCRIPT","CSS"],
+        "link" : "https://github.com/JayRangoonwala/URL-Shortner"
+    },
+    {
+        "image_url" : "./eventify.png",
+        "title" : "Event Management",
+        "description" : "It is used to manage the event.In which user can create event and register in event.",
+        "skills" : ["HTML","CSS","JAVASCRIPT","PHP","SQL"],
+        "link" : "https://github.com/JayRangoonwala/event-management"
+    },
+    {
+        "image_url" : "./image.png",
+        "title" : "UI Practice",
+        "description" : "This is a practice project.In this project I have created simple home page UI and Use of api.",
+        "skills" : ["REACT","TAILWIND","JAVASCRIPT","API"],
+        "link" : "https://github.com/JayRangoonwala/React-Practice"
+    }
+]

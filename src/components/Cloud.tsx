@@ -20,6 +20,7 @@ const slugs = [
   "docker",
   "git",
   "github",
+  "php",
   "sql",
   "gitlab",
   "visualstudiocode",

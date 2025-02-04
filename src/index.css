@@ -10,6 +10,6 @@
     @apply bg-neutral-950 text-slate-300 bg-gradient-to-b from-slate-800 to-black bg-no-repeat bg-fixed;
   }
   .skill-span{
-    @apply inset-0 text-slate-400 font-semibold opacity-0 group-hover:opacity-100 transition-opacity ease-in-out pt-1 text-sm;
+    @apply inset-0 bg-white text-black font-semibold opacity-0 group-hover:opacity-100 transition-opacity ease-in-out mt-2 px-1 rounded-md text-sm;
   }
 }

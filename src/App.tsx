@@ -6,6 +6,7 @@ import { Cloud } from "./components/Cloud";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
+import { MoveRight } from "lucide-react";
 
 const App: React.FC = () => {
   return (
@@ -27,15 +28,26 @@ const App: React.FC = () => {
         <Cloud />
         <h1 className="text-2xl ml-14 hover:text-slate-100 mt-16">Skills</h1>
         <Skills />
-        <h1 className="text-2xl ml-14 hover:text-slate-100 mt-16">Projects</h1>
-        <Projects/>
-        <Projects/>
-        <Projects/>
-        <h1 className="text-2xl ml-14 hover:text-slate-100 mt-16">Education</h1>
-        <Education/>
-        <Education/>
+        <h1 className="text-2xl ml-14 hover:text-slate-100 mt-3 mb-8">
+          Projects
+        </h1>
+        <Projects />
+        <span
+          className="text-lg underline text-slate-400 my-10 w-full justify-center flex gap-1 items-center cursor-pointer"
+          onClick={() =>
+            window.open("https://github.com/JayRangoonwala", "_blank")
+          }
+        >
+          See More Archieves
+          <MoveRight className="size-6 pt-[5px]" />
+        </span>
+        <h1 className="text-2xl ml-14 hover:text-slate-100 mt-8 ">Education</h1>
+        <Education />
 
-        <h1 className="m-10 mx-16 text-slate-400">NOTE : Updates To This Portfolio Are Ongoing..</h1>
+        <h1 className=" my-5 flex w-full justify-center hover:text-slate-300 py-10 text-sm text-slate-400">
+          <span className="text-slate-200 pr-1">NOTE - </span> Updates To This
+          Portfolio Are Ongoing..
+        </h1>
       </div>
     </section>
   );

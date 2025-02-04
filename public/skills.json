@@ -1,0 +1,58 @@
+[
+    {
+        "image_url" : "react.svg",
+        "title" : "REACT"
+    },
+    {
+        "image_url" : "nodejs.svg",
+        "title" : "NODE JS"
+    },
+    {
+        "image_url" : "express.svg",
+        "title" : "EXPRESS"
+    },
+    {
+        "image_url" : "mongodb.svg",
+        "title" : "MONGO DB"
+    },
+    {
+        "image_url" : "tailwind.svg",
+        "title" : "TAILWINDCSS"
+    },
+    {
+        "image_url" : "redux.svg",
+        "title" : "REDUX"
+    },
+    {
+        "image_url" : "javascript.svg",
+        "title" : "JAVASCRIPT"
+    },
+    {
+        "image_url" : "typescript.svg",
+        "title" : "TYPESCRIPT"
+    },
+    {
+        "image_url" : "php.svg",
+        "title" : "PHP"
+    },
+    {
+        "image_url" : "html-1.svg",
+        "title" : "HTML"
+    },
+    {
+        "image_url" : "css3.svg",
+        "title" : "CSS"
+    },
+    {
+        "image_url" : "c-1.svg",
+        "title" : "C"
+    },
+    {
+        "image_url" : "python.svg",
+        "title" : "PYTHON"
+    },
+    {
+        "image_url" : "github.svg",
+        "title" : "GIT-GITHUB"
+    }
+]
