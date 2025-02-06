@@ -2,7 +2,7 @@
     {
         "image_url" : "./urlshortner.jpg",
         "title" : "URL SHORTNER",
-        "description" : "To convert long URLs into short url,Easy-to-remember links. It is commonly used for sharing links on social media, messaging apps, or emails where space is limited.",
+        "description" : "To convert long URLs into short url,Easy-to-remember links. ",
         "skills" : ["REACT","NODE JS","EXPRESS","MONGODB","JAVASCRIPT","CSS"],
         "link" : "https://github.com/JayRangoonwala/URL-Shortner"
     },

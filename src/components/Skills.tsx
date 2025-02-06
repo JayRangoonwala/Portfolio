@@ -26,14 +26,14 @@ const Skills: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative flex gap-x-5 gap-y-5 p-8 flex-wrap ml-16 mt-4 items-center text-center box-border ">
+    <div className="relative flex gap-5 p-8 flex-wrap ml-16 mt-4 items-center justify-center text-center box-border max-md:w-full max-md:m-0 max-md:gap-2">
       {skill.map((skill) => {
         return (
-          <div className="group h-[100px] w-[100px] flex flex-col items-center">
+          <div className="group h-[100px] w-[100px] max-md:h-[50px] max-md:w-[50px] flex flex-col items-center">
             <img
               src={skill.image_url}
               alt={skill.title}
-              className="object-cover h-14 w-14 transition-opacity ease-in-out"
+              className="object-cover h-14 w-14 max-md:h-7 max-md:w-7 transition-opacity ease-in-out"
             />
             <span className="skill-span">{skill.title}</span>
           </div>

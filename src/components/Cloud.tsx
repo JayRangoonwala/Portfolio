@@ -32,7 +32,7 @@ export function Cloud() {
   );
 
   return (
-    <div className="relative flex h-[300px] w-[300px] max-w-lg bg-slate-800 backdrop-blur-lg items-center justify-center rounded-xl overflow-hidden mt-16 ml-52">
+    <div className="relative flex h-[300px] w-[300px] max-md:h-[180px] max-md:w-[180px] max-w-lg bg-slate-800 backdrop-blur-lg items-center justify-center rounded-xl overflow-hidden">
       <IconCloud images={images} />
     </div>
   );
