@@ -1,5 +1,12 @@
 [
     {
+        "image_url" : "./Aayuveda.jpg",
+        "title" : "AayuVeda",
+        "description" : "Revolutionizing Healthcare with AI-Powered Medical Assistance",
+        "skills" : ["REACT","TAILWIND","PYTHON","NODE JS","EXPRESS","MONGODB"],
+        "link" : "https://aayu-veda-hackathon1.vercel.app"
+    },
+    {
         "image_url" : "./urlshortner.jpg",
         "title" : "URL SHORTNER",
         "description" : "To convert long URLs into short url,Easy-to-remember links. ",
