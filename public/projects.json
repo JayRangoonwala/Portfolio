@@ -1,5 +1,12 @@
 [
     {
+        "image_url" : "./livedoc1.png",
+        "title" : "LiveDocs",
+        "description" : "Built a real-time collaborative document editor using Liveblocks, Lexical, Next.js, and Clerk with role-based access, live presence, and rich text editing.",
+        "skills" : ["NEXT","TYPESCRIPT","TAILWIND"],
+        "link" : "https://github.com/JayRangoonwala/Live-Docs"
+    },
+    {
         "image_url" : "./Aayuveda.jpg",
         "title" : "AayuVeda",
         "description" : "Revolutionizing Healthcare with AI-Powered Medical Assistance",
@@ -19,12 +26,5 @@
         "description" : "It is used to manage the event.In which user can create event and register in event.",
         "skills" : ["HTML","CSS","JAVASCRIPT","PHP","SQL"],
         "link" : "https://github.com/JayRangoonwala/event-management"
-    },
-    {
-        "image_url" : "./image.png",
-        "title" : "UI Practice",
-        "description" : "This is a practice project.In this project I have created simple home page UI and Use of api.",
-        "skills" : ["REACT","TAILWIND","JAVASCRIPT","API"],
-        "link" : "https://github.com/JayRangoonwala/React-Practice"
     }
 ]
